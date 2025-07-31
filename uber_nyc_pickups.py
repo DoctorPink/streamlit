@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
-st.title('NYC Uber Pickups for One Day')
+st.title('NYC Uber Pickups - Updated')
 st.divider(width="stretch")
 
 DATE_COLUMN = 'date/time'
@@ -22,7 +22,7 @@ def load_data(nrows):
 
 data_load_state = st.text('Loading data...')
 data = load_data(10000)
-data_load_state.text("Data is cached for fast loading.)")
+data_load_state.text("Data is cached for fast loading.")
 
 # -----------------------------Show Raw Data Table -----------------------------
 if st.checkbox('Show Data in a Table'):
